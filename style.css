@@ -1,0 +1,113 @@
+/* ---------------------------------- */
+/* 1. Reset y Estilos Generales (body) */
+/* ---------------------------------- */
+
+body {
+    /* Fondo Negro Oscuro (Dark Mode) */
+    background-color: #121212; 
+    /* Texto Blanco/Gris Claro para legibilidad */
+    color: #e0e0e0; 
+    
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------- */
+/* 2. Estilos del Contenedor Principal */
+/* ---------------------------------- */
+
+.contenedor {
+    /* Fondo Negro "No Tan Oscuro" para el recuadro */
+    background-color: #1e1e1e; 
+    padding: 40px;
+    border-radius: 15px;
+    /* Sombra más sutil en modo oscuro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+/* ---------------------------------- */
+/* 3. Estilos de Tipografía */
+/* ---------------------------------- */
+
+h1 {
+    /* Color Púrpura Claro para el título (contraste moderno) */
+    color: #bb86fc; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.descripcion {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.nota {
+    font-style: italic;
+    /* Color más claro para la nota */
+    color: #a0a0a0; 
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* ---------------------------------- */
+/* 4. Estilos del Botón de WhatsApp */
+/* ---------------------------------- */
+
+.boton-whatsapp {
+    /* Nuevo Color Cian Brillante (Aqua) para el botón */
+    background-color: #03dac6; 
+    color: #1e1e1e; /* Texto oscuro para contrastar con el botón brillante */
+    
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    
+    /* Sombra que destaca el color cian */
+    box-shadow: 0 6px 15px rgba(3, 218, 198, 0.4); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-whatsapp:hover {
+    /* Efecto al pasar el ratón (un cian ligeramente más oscuro) */
+    background-color: #03a89a; 
+    transform: translateY(-2px);
+    /* Sombra más pronunciada al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(3, 218, 198, 0.6); 
+}
+
+/* ---------------------------------- */
+/* 5. Adaptación a Móviles */
+/* ---------------------------------- */
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 25px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .boton-whatsapp {
+        font-size: 1.1em;
+        padding: 12px 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+  }
